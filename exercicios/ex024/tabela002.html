@@ -30,7 +30,7 @@
             border: 1px solid rgba(169, 169, 169, 0.75);
             padding: 10px;
             margin-bottom: 2.5px;
-            background-color: gray;
+            background-color: rgba(0, 0, 0, 0.75);
             color: white;
         }
         
@@ -45,6 +45,14 @@
 
         th.text, td.text {
             text-align: left;
+        }
+
+        /*tbody > tr:nth-child(odd) {
+            background-color: white;
+        }*/
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
